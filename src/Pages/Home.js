@@ -15,7 +15,7 @@ function Home() {
       {/* flip card1 */}
       <div className="flip_card_section">
         <div className="container">
-          <div className="row d-flex flex-wrap">
+          <div className="row d-flex">
             <div className="col-lg-3 flip_card_height">
               <div class="flip-card">
                 <div class="flip-card-inner">
