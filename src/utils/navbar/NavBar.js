@@ -1,12 +1,12 @@
 import React from "react";
 import { Routes, Route, Link, NavLink } from "react-router-dom";
-import Home from "./Home";
-import AboutUs from "./AboutUs";
-import ContactUs from "./ContactUs";
-import Doctors from "./Doctors";
-import OurServices from "./OurServices";
-import Logo from "../assests/appmd-logo.svg";
-import "../navbar/navbar.css";
+import Home from "../../Pages/Home";
+import AboutUs from "../../Pages/AboutUs";
+import ContactUs from "../../Pages/ContactUs";
+import Doctors from "../../Pages/Doctors";
+import OurServices from "../../Pages/OurServices";
+import Logo from "../../assests/appmd-logo.svg";
+import "./navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
 
 function NavBar() {

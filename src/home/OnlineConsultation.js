@@ -1,4 +1,4 @@
-import "../navbar/navbar.css";
+import "../utils/navbar/navbar.css";
 import consultationimage from "../assests/group-image.png";
 
 export default function OnlineConsultation() {
@@ -6,10 +6,11 @@ export default function OnlineConsultation() {
     <div>
       <div className="container">
         <div className="row pt-5">
-          <div className="col-lg-6">
+          <div className="col-lg-6 d-flex flex-column justify-content-evenly">
             <h3 className="home_container_secondpage_content_heading">
               Online Medical Consultation
             </h3>
+            <span className="bottom_gradient"></span>
             <p className="home_container_secondpage_content_para pt-3  ">
               Located in Columbus, GA, we are here to promote steady and marked
               improvements in your physical and mental wellbeing. We pride
