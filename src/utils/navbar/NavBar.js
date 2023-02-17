@@ -1,10 +1,5 @@
 import React from "react";
-import { Routes, Route, Link, NavLink } from "react-router-dom";
-import Home from "../../Pages/Home";
-import AboutUs from "../../Pages/AboutUs";
-import ContactUs from "../../Pages/ContactUs";
-import Doctors from "../../Pages/Doctors";
-import OurServices from "../../Pages/OurServices";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assests/appmd-logo.svg";
 import "./navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
@@ -51,13 +46,6 @@ function NavBar() {
           </div>
         </div>
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="ourservices" element={<OurServices />} />
-        <Route path="doctor" element={<Doctors />} />
-        <Route path="about" element={<AboutUs />} />
-        <Route path="contact" element={<ContactUs />} />
-      </Routes>
     </div>
   );
 }
