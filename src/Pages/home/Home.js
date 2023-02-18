@@ -15,6 +15,8 @@ import maillogo from "../../assests/mail-icon.png";
 import facebooklogo from "../../assests/facebook-icon.png";
 import instalogo from "../../assests/insta-icon.png";
 import youtubelogo from "../../assests/youtube-icon.png";
+import sendicon from "../../assests/send-icon.png";
+import UncontrolledExample from "../../Sample";
 
 function Home() {
   return (
@@ -49,6 +51,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <UncontrolledExample/>
       {/* OnlineConsultation section*/}
       <div className="OnlineConsultation sec">
         <div className="container">
@@ -352,9 +355,9 @@ function Home() {
       <div className="footer_section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <div className="footer_section_part1">
-                <img src={footerlogo} alt="logo" className="img-fluid" />
+                <img src={footerlogo} alt="logo" className="img-fluid pb-3" />
                 <p>Advanced Medicine. Closer than before.</p>
               </div>
             </div>
@@ -370,7 +373,9 @@ function Home() {
                 </a>
                 <a href="#" className="d-flex gap-3 pb-3 img-fluid">
                   <img src={mobilelogo} alt="" />
-                  <p>INDIA : +91 96772 07309 (IST)</p>
+                  <p className="footer_section_part2_contact">
+                    INDIA : +91 96772 07309 (IST)
+                  </p>
                 </a>
                 <a href="#" className="d-flex gap-3 pb-3 img-fluid">
                   <img src={maillogo} alt="" />
@@ -378,7 +383,7 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div className="footer_section_part3">
                 <div className="footer_section_part3_header">
                   <h1 className="pt-3">Subscribe to our NEWSLETTER</h1>
@@ -388,13 +393,20 @@ function Home() {
                       placeholder="Enter your email"
                       className="left_input"
                     />
-                    <input
-                      type="text"
-                      placeholder="SUBSCRIBE NOW"
-                      className="right_input"
-                    />
+                    <div className="d-flex footer_inputs">
+                      <input
+                        type="text"
+                        placeholder="SUBSCRIBE NOW"
+                        className="right_input"
+                      />
+                      <img
+                        src={sendicon}
+                        alt=""
+                        className="img-fluid send_icon_footer"
+                      />
+                    </div>
                   </div>
-                  <div className="social_links d-flex pt-4">
+                  <div className="social_links d-flex align-items-center pt-4">
                     <p>Follow us on</p>
                     <a
                       href="#"
@@ -423,7 +435,18 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="container-fluid pt-5">
+          <div className="row">
+            <div className="col-lg-12">
+              <span className="footer_line"></span>
+              <div className="footer_bottom_content pt-3">
+                © 2022 BY MARIA TECHNOLOGIES
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* slider section */}
     </div>
   );
 }
