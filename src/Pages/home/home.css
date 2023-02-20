@@ -62,6 +62,11 @@
 }
 
 /* our services section css */
+.grid_bg {
+  background-image: url(../../assests/Grid-img.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
 .bg_white_bottom {
   background: white !important;
 }
@@ -113,6 +118,10 @@
   border-radius: 17px;
   outline: transparent;
   border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .hour_button span {
   letter-spacing: 0.48px;
@@ -192,8 +201,8 @@
   background: transparent linear-gradient(180deg, #2821b6 0%, #11118b 100%) 0%
     0% no-repeat padding-box;
   border-radius: 0px 0px 6px 6px;
-  position: absolute;
-  bottom: 0px;
+  position: relative;
+  bottom: 55px;
   left: 0px;
   display: flex;
   align-items: center;
@@ -230,7 +239,7 @@
 }
 .flip-card-back p {
   letter-spacing: 0.19px;
-  font-size: 12px;
+  font-size: 11px;
   font-family: poppins;
 }
 .flip-card-back span {
@@ -288,6 +297,7 @@
   height: 315px; */
   padding: 55px 0 40px 50px;
   position: relative;
+  width: 80%;
 }
 /* .patients_cards::before {
   content: "";
@@ -311,6 +321,9 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 220px 0px 0px 0px;
+}
+.patient_sec_bottom {
+  padding-bottom: 200px;
 }
 .footer_section_part2 a {
   text-decoration: none;
@@ -413,12 +426,12 @@
   right: 80px;
   left: unset;
 }
-.carousel-control-next {
+/* .carousel-control-next {
   right: 40px;
-}
+} */
 .carousel-control-next {
   position: absolute;
-  top: 70px;
+  top: 80px;
   bottom: 200px;
   z-index: 1;
   display: flex;
@@ -432,10 +445,12 @@
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
+  left: 460px;
 }
 .carousel-control-prev {
   position: absolute;
-  top: -128px;
+  left: 404px;
+  top: -115px;
   bottom: 0;
   z-index: 1;
   display: flex;
@@ -449,4 +464,37 @@
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
+}
+.patients_card_right_image {
+  /* float: right; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* dropdown css */
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  cursor: pointer;
+  width: unset !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-family: inherit;
+  color: #4d4d4d;
+  border: unset !important;
+  border-radius: 4px;
+  background: transparent;
+}
+.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  position: absolute;
+  z-index: 999999;
+  border: 1px solid #bdbbbb;
+  border-radius: 3px;
+  background: #bdbbbb;
+  margin-top: 8px;
+  padding: 8px 0;
+  max-height: 100px !important;
+  max-width: 150px !important;
+  overflow: auto;
 }

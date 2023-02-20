@@ -16,9 +16,13 @@ import facebooklogo from "../../assests/facebook-icon.png";
 import instalogo from "../../assests/insta-icon.png";
 import youtubelogo from "../../assests/youtube-icon.png";
 import sendicon from "../../assests/send-icon.png";
-import UncontrolledExample from "../../Sample";
-
+import Carousel from "react-bootstrap/Carousel";
+import { FaClock } from "react-icons/fa";
+import React, { useState } from "react";
+import ReactFlagsSelect from "react-flags-select";
 function Home() {
+  const [select, setSelect] = useState("US");
+  const onSelect = code => setSelect(code);
   return (
     <div>
       {/* banner section */}
@@ -51,10 +55,9 @@ function Home() {
           </div>
         </div>
       </div>
-      <UncontrolledExample/>
       {/* OnlineConsultation section*/}
-      <div className="OnlineConsultation sec">
-        <div className="container">
+      <div className="OnlineConsultation sec ">
+        <div className="container grid_bg">
           <div className="row pt-5">
             <div className="col-lg-6 d-flex flex-column justify-content-evenly">
               <h3 className="home_container_secondpage_content_heading">
@@ -79,9 +82,8 @@ function Home() {
                 the hospital or at home.
               </p>
               <p className="home_container_secondpage_content_para pt-4">
-                appMD's team of physicians have trained in US residency
-                <br />
-                programs and currently practicing in US hospitals.
+                appMD's team of physicians have trained in US residency programs
+                and currently practicing in US hospitals.
               </p>
             </div>
             <div className="col-lg-6">
@@ -105,7 +107,7 @@ function Home() {
         </div>
         <div className="container pt-1 ">
           <div className="row pt-5">
-            <div className="col-lg-6  ">
+            <div className="col-lg-6 md-2">
               <div className="">
                 <img src={Ourservicebig} alt="" className="img-fluid" />
               </div>
@@ -115,7 +117,7 @@ function Home() {
                   <div className="d-flex justify-content-between pt-2 align-items-center ">
                     <p className="our_sevices_content_premium">premium</p>
                     <button className="hour_button">
-                      <img src="" alt="" className="img-fluid" />
+                      <FaClock />
                       <span>1 Hour</span>
                     </button>
                   </div>
@@ -200,8 +202,6 @@ function Home() {
                       massa viverra. Curasd bitur sollicitudin a nibh placerat,
                       Proin elementum. urna vitae accumsan auou sollicitudin.
                       Nullam vitae leo feugiat, maximus purus se. consequat leo.
-                      In ano dapibus ut erat. et elementum. Nam facilisis nibh
-                      nec leo scelerisque. , sed tem pus lorem. vestibulum.
                     </p>
                     <span>language known</span>
                     <h4>English, Hindi & Urdu</h4>
@@ -233,8 +233,6 @@ function Home() {
                       massa viverra. Curasd bitur sollicitudin a nibh placerat,
                       Proin elementum. urna vitae accumsan auou sollicitudin.
                       Nullam vitae leo feugiat, maximus purus se. consequat leo.
-                      In ano dapibus ut erat. et elementum. Nam facilisis nibh
-                      nec leo scelerisque. , sed tem pus lorem. vestibulum.
                     </p>
                     <span>language known</span>
                     <h4>English, Hindi & Urdu</h4>
@@ -266,8 +264,6 @@ function Home() {
                       massa viverra. Curasd bitur sollicitudin a nibh placerat,
                       Proin elementum. urna vitae accumsan auou sollicitudin.
                       Nullam vitae leo feugiat, maximus purus se. consequat leo.
-                      In ano dapibus ut erat. et elementum. Nam facilisis nibh
-                      nec leo scelerisque. , sed tem pus lorem. vestibulum.
                     </p>
                     <span>language known</span>
                     <h4>English, Hindi & Urdu</h4>
@@ -298,8 +294,6 @@ function Home() {
                       massa viverra. Curasd bitur sollicitudin a nibh placerat,
                       Proin elementum. urna vitae accumsan auou sollicitudin.
                       Nullam vitae leo feugiat, maximus purus se. consequat leo.
-                      In ano dapibus ut erat. et elementum. Nam facilisis nibh
-                      nec leo scelerisque. , sed tem pus lorem. vestibulum.
                     </p>
                     <span>language known</span>
                     <h4>English, Hindi & Urdu</h4>
@@ -312,14 +306,14 @@ function Home() {
       </div>
       {/* patients_say_section */}
       <div className="patients_say_section">
-        <div className="container">
-          <div className="row d-flex">
-            <div className="col-lg-8">
+        <div className="container patient_sec_bottom">
+          <div className="row position-relative">
+            <div className="col-lg-12">
               <div className="patients_card_header d-flex flex-column">
                 <h1>What our patients say</h1>
                 <span className="bottom_gradient"></span>
               </div>
-              <div className="patients_cards mt-5">
+              {/* <div className="patients_cards mt-5">
                 <div className="card_top_section">
                   <div className="profile_details d-flex align-items-center gap-2">
                     <img src={profilepic} alt="" />
@@ -343,11 +337,75 @@ function Home() {
                     leo scelerisque. , sed tem pus lorem. vestibulum.
                   </p>
                 </div>
-              </div>
+              </div> */}
+              <Carousel interval={null} style={{ position: "relative" }}>
+                <Carousel.Item>
+                  <div className="patients_cards mt-5">
+                    <div className="card_top_section">
+                      <div className="profile_details d-flex align-items-center gap-2">
+                        <img src={profilepic} alt="" />
+                        <div className="profile_details_name">
+                          <h5>Siddartha Joshi</h5>
+                          <p>New York</p>
+                        </div>
+                      </div>
+                      <div className="next_card_select">
+                        <img src="" alt="" />
+                        <img src="" alt="" />
+                      </div>
+                    </div>
+                    <div className="card_bottom_section">
+                      <p>
+                        sheeraz vestibulum felis eget dui porttitor, ut sodales
+                        <br />
+                        massa viverra. Curasd bitur sollicitudin a nibh
+                        placerat.
+                        <br /> Proin elementum urna vitae accumsan auou
+                        sollicitudin.
+                        <br /> vitae leo feugiat, maximus purus sed, consequat
+                        leo.
+                      </p>
+                    </div>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="patients_cards mt-5">
+                    <div className="card_top_section">
+                      <div className="profile_details d-flex align-items-center gap-2">
+                        <img src={profilepic} alt="" />
+                        <div className="profile_details_name">
+                          <h5>Siddartha Joshi</h5>
+                          <p>New York</p>
+                        </div>
+                      </div>
+                      <div className="next_card_select">
+                        <img src="" alt="" />
+                        <img src="" alt="" />
+                      </div>
+                    </div>
+                    <div className="card_bottom_section">
+                      <p>
+                        sheeraz vestibulum felis eget dui porttitor, ut sodales
+                        <br />
+                        massa viverra. Curasd bitur sollicitudin a nibh
+                        placerat.
+                        <br /> Proin elementum urna vitae accumsan auou
+                        sollicitudin.
+                        <br /> vitae leo feugiat, maximus purus sed, consequat
+                        leo.
+                      </p>
+                    </div>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
+              <img
+                src={patientsimage}
+                alt=""
+                className="img-fluid patients_card_right_image"
+              />
             </div>
-            <div className="col-lg-4 pt-5">
-              <img src={patientsimage} alt="" className="img-fluid" />
-            </div>
+            {/* <div className="col-lg-4 pt-2">
+            </div> */}
           </div>
         </div>
       </div>
@@ -359,6 +417,11 @@ function Home() {
               <div className="footer_section_part1">
                 <img src={footerlogo} alt="logo" className="img-fluid pb-3" />
                 <p>Advanced Medicine. Closer than before.</p>
+                <ReactFlagsSelect
+                  selected={select}
+                  onSelect={onSelect}
+                  countries={["IN", "US"]}
+                />
               </div>
             </div>
             <div className="col-lg-3">
@@ -446,7 +509,6 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* slider section */}
     </div>
   );
 }

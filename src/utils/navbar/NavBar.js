@@ -1,10 +1,14 @@
-import React from "react";
+// import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assests/appmd-logo.svg";
 import "./navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import ReactFlagsSelect from "react-flags-select";
 
 function NavBar() {
+  const [select, setSelect] = useState("IN");
+  const onSelect = code => setSelect(code);
   return (
     <div>
       <div className="header-sec">
@@ -38,6 +42,16 @@ function NavBar() {
                   <Nav.Item>
                     <NavLink as={Link} to="contact">
                       CONTACT US
+                    </NavLink>
+                  </Nav.Item>
+                  <Nav.Item className="react_flag">
+                    <NavLink>
+                      <ReactFlagsSelect
+                        selected={select}
+                        onSelect={onSelect}
+                        countries={["IN", "US"]}
+                        className="raect_flag"
+                      />
                     </NavLink>
                   </Nav.Item>
                 </Nav>
