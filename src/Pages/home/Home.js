@@ -1,4 +1,4 @@
-import flipimg1 from "../../assests/flip-img1.png";
+import flipimg2 from "../../assests/flip-img-2.png";
 import flipbackimg from "../../assests/flip-back-img.png";
 import "../../Pages/home/home.css";
 import Righrarrow from "../../assests/button-right.svg";
@@ -20,6 +20,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { FaClock } from "react-icons/fa";
 import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
+
 function Home() {
   const [select, setSelect] = useState("US");
   const onSelect = code => setSelect(code);
@@ -175,25 +176,21 @@ function Home() {
         </div>
       </div>
       {/*flip_card_section  */}
-      {/* flip card1 */}
-      <div className="flip_card_section">
-        <div className="container ">
+      <div className="flip_card_section pb-5">
+        <div className="container">
           <div className="row d-flex ">
-            <div className="col-lg-3 col-md-3 flip_card_height">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      src={flipimg1}
-                      alt="Avatar"
-                      className="img-fluid flip_doctors_image"
-                    />
+            {/* flip card1 */}
+            <div className="col-lg-3  ">
+              <div class="card">
+                <div class="card-flip">
+                  <div class="card-front">
+                    <img src={flipimg2} alt="" className="img-fluid" />
                     <div className="flipcard_front_content">
                       <h3>Dr. Aadil Mohamed, MD</h3>
                       <p>CARDIOLOGIST</p>
                     </div>
                   </div>
-                  <div class="flip-card-back">
+                  <div class="card-back bg_back_flip">
                     <img src={flipbackimg} alt="" />
                     <h3>Dr. Merry Joy, MBBS</h3>
                     <h5>DERMATOLOGIST</h5>
@@ -204,27 +201,23 @@ function Home() {
                       Nullam vitae leo feugiat, maximus purus se. consequat leo.
                     </p>
                     <span>language known</span>
-                    <h4>English, Hindi & Urdu</h4>
+                    <h4>English, Hindi & Urdu</h4>{" "}
                   </div>
                 </div>
               </div>
             </div>
             {/*flip card2  */}
-            <div className="col-lg-3 col-md-3 flip_card_height">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      src={flipimg1}
-                      alt="Avatar"
-                      className="img-fluid flip_doctors_image"
-                    />
+            <div className="col-lg-3 ">
+              <div class="card">
+                <div class="card-flip">
+                  <div class="card-front">
+                    <img src={flipimg2} alt="" className="img-fluid" />
                     <div className="flipcard_front_content">
                       <h3>Dr. Aadil Mohamed, MD</h3>
                       <p>CARDIOLOGIST</p>
                     </div>
                   </div>
-                  <div class="flip-card-back">
+                  <div class="card-back bg_back_flip">
                     <img src={flipbackimg} alt="" />
                     <h3>Dr. Merry Joy, MBBS</h3>
                     <h5>DERMATOLOGIST</h5>
@@ -235,27 +228,23 @@ function Home() {
                       Nullam vitae leo feugiat, maximus purus se. consequat leo.
                     </p>
                     <span>language known</span>
-                    <h4>English, Hindi & Urdu</h4>
+                    <h4>English, Hindi & Urdu</h4>{" "}
                   </div>
                 </div>
               </div>
             </div>
             {/*flip card3 */}
-            <div className="col-lg-3 col-md-3 flip_card_height">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      src={flipimg1}
-                      alt="Avatar"
-                      className="img-fluid flip_doctors_image"
-                    />
+            <div className="col-lg-3 ">
+              <div class="card">
+                <div class="card-flip">
+                  <div class="card-front">
+                    <img src={flipimg2} alt="" className="img-fluid" />
                     <div className="flipcard_front_content">
                       <h3>Dr. Aadil Mohamed, MD</h3>
                       <p>CARDIOLOGIST</p>
                     </div>
                   </div>
-                  <div class="flip-card-back">
+                  <div class="card-back bg_back_flip">
                     <img src={flipbackimg} alt="" />
                     <h3>Dr. Merry Joy, MBBS</h3>
                     <h5>DERMATOLOGIST</h5>
@@ -266,26 +255,23 @@ function Home() {
                       Nullam vitae leo feugiat, maximus purus se. consequat leo.
                     </p>
                     <span>language known</span>
-                    <h4>English, Hindi & Urdu</h4>
+                    <h4>English, Hindi & Urdu</h4>{" "}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 flip_card_height">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      src={flipimg1}
-                      alt="Avatar"
-                      className="img-fluid flip_doctors_image"
-                    />
+            {/*flip card4 */}
+            <div className="col-lg-3 ">
+              <div class="card">
+                <div class="card-flip">
+                  <div class="card-front">
+                    <img src={flipimg2} alt="" className="img-fluid" />
                     <div className="flipcard_front_content">
                       <h3>Dr. Aadil Mohamed, MD</h3>
                       <p>CARDIOLOGIST</p>
                     </div>
                   </div>
-                  <div class="flip-card-back">
+                  <div class="card-back bg_back_flip">
                     <img src={flipbackimg} alt="" />
                     <h3>Dr. Merry Joy, MBBS</h3>
                     <h5>DERMATOLOGIST</h5>
@@ -296,7 +282,7 @@ function Home() {
                       Nullam vitae leo feugiat, maximus purus se. consequat leo.
                     </p>
                     <span>language known</span>
-                    <h4>English, Hindi & Urdu</h4>
+                    <h4>English, Hindi & Urdu</h4>{" "}
                   </div>
                 </div>
               </div>
@@ -305,7 +291,7 @@ function Home() {
         </div>
       </div>
       {/* patients_say_section */}
-      <div className="patients_say_section">
+      <div className="patients_say_section pt-5">
         <div className="container patient_sec_bottom">
           <div className="row position-relative">
             <div className="col-lg-12">
@@ -378,10 +364,6 @@ function Home() {
                           <p>New York</p>
                         </div>
                       </div>
-                      <div className="next_card_select">
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                      </div>
                     </div>
                     <div className="card_bottom_section">
                       <p>
@@ -424,7 +406,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 pt-5">
               <div className="footer_section_part2">
                 <a href="#" className="d-flex gap-3 pb-3 img-fluid">
                   <img src={locationlogo} alt="" />
@@ -446,7 +428,7 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-5">
+            <div className="col-lg-5 pt-5">
               <div className="footer_section_part3">
                 <div className="footer_section_part3_header">
                   <h1 className="pt-3">Subscribe to our NEWSLETTER</h1>

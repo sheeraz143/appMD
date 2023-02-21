@@ -151,7 +151,7 @@
   color: #ffffff;
 }
 /*flip card css section  */
-.flip-card {
+/* .flip-card {
   background-color: transparent;
   max-width: 316px;
   height: 470px;
@@ -251,7 +251,7 @@
 .flip-card-back h4 {
   font-size: 20px;
   font-family: poppins;
-}
+} */
 /* .flip_card_height {
   height: 470px;
   width: 314px;
@@ -426,9 +426,6 @@
   right: 80px;
   left: unset;
 }
-/* .carousel-control-next {
-  right: 40px;
-} */
 .carousel-control-next {
   position: absolute;
   top: 80px;
@@ -497,4 +494,104 @@
   max-height: 100px !important;
   max-width: 150px !important;
   overflow: auto;
+}
+.ReactFlagsSelect-module_flagsSelect__2pfa2 {
+  text-align: -webkit-center !important;
+}
+/*  */
+.card-flip {
+  perspective: 1000px;
+  position: relative;
+  width: 250px;
+  height: 390px;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.card-front {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-back {
+  backface-visibility: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  background: transparent linear-gradient(213deg, #1515a2 0%, #a8251b 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 6px;
+  padding: 32px 15px 30px 15px;
+  text-align: center;
+}
+.card-back h3 {
+  letter-spacing: 0.52px;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-back h5 {
+  letter-spacing: 0.48px;
+  font-family: poppins;
+  font-size: 16px;
+}
+.card-back p {
+  letter-spacing: 0.19px;
+  font-size: 11px;
+  font-family: poppins;
+}
+.card-back span {
+  letter-spacing: 0.56px;
+  font-size: 15px;
+  font-family: poppins;
+  font-weight: bold;
+}
+.card-back h4 {
+  font-size: 20px;
+  font-family: poppins;
+}
+.flipcard_front_content {
+  width: 100%;
+  height: 20%;
+  background: transparent linear-gradient(180deg, #2821b6 0%, #11118b 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 0px 0px 6px 6px;
+  position: relative;
+  bottom: 28px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.flipcard_front_content h3 {
+  font: normal normal 600 20px/30px Poppins;
+  letter-spacing: 0.52px;
+  margin: 0;
+}
+.flipcard_front_content p {
+  font: normal normal bold 14px/36px Poppins;
+  letter-spacing: 0.28px;
+  color: #d3483d;
+}
+.card {
+  border: 1px solid transparent !important;
+  /* padding-bottom: 195px !important; */
 }
