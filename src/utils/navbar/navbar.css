@@ -3,31 +3,32 @@
 }
 .navbar-nav {
   gap: 24px;
-  font: normal normal 600 16px/12px Poppins;
+  /* font: normal normal 600 16px/12px Poppins; */
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 0.16px;
   align-items: center;
 }
 .nav-item a {
-  font: normal normal 600 16px/12px Poppins;
-  letter-spacing: 0.16px;
+  /* font: normal normal 600 16px/12px Poppins;
+  letter-spacing: 0.16px; */
   text-transform: uppercase;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: #ffffff !important;
-}
-.nav-item a {
   text-decoration: none;
   display: inline-block;
   position: relative;
   color: #ffffff;
+  /* font-size: 14px; */
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff !important;
 }
 .nav-item a:after {
   content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
-  bottom: -4px;
+  height: 2px;
+  bottom: -2px;
   left: 0;
   background-color: #ffffff;
   transform-origin: bottom right;
@@ -53,6 +54,6 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-.react_flag :hover{
-      columns: unset;
+.react_flag :hover {
+  columns: unset;
 }

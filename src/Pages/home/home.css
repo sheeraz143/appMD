@@ -1,19 +1,27 @@
+.container {
+  max-width: 1200px !important;
+}
+
 .header_content {
   align-self: center;
 }
 .home_content h1 {
-  font-family: barlow;
   letter-spacing: 1.58px;
   text-shadow: 0px 3px 6px #00000029;
-}
-.home_content span {
-  font-weight: 900;
-  font-size: 46px;
+  margin: 0;
+  font-size: 60px;
   font-family: "Barlow";
 }
+.home_content span {
+  font-weight: 700;
+  font-size: 60px;
+}
 .header_text {
-  font: normal normal normal 16px/26px Poppins;
   letter-spacing: 0.48px;
+  font-family: "Poppins";
+  font-size: 14px;
+  margin: 0;
+  line-height: 25px;
 }
 .home_bg {
   display: flex;
@@ -48,10 +56,11 @@
 }
 /* online medical  section css */
 .home_container_secondpage_content_heading {
-  letter-spacing: 0.99px;
   color: #212144;
-  font: normal normal normal 38px Patua One;
   margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Patua One";
 }
 .bottom_gradient {
   width: 140px;
@@ -71,25 +80,29 @@
   background: white !important;
 }
 .our_services_header_content {
-  letter-spacing: 0.99px;
-  font-size: 38px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
   font-family: "Patua One";
+  letter-spacing: 0.99px;
 }
 .view_more {
-  font: normal normal 600 14px/12px Poppins;
   letter-spacing: 0.28px;
-  color: #ffffff;
   text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
 }
-.view_more :hover {
+.view_more_color a:hover {
   color: #ffffff;
 }
 .home_container_secondpage_content_para {
   color: #1d1d1d;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 0.32px;
+  line-height: 26px;
 }
 .ourservices_section {
   background: url(../../assests/ourservice_bg.png);
@@ -98,17 +111,19 @@
   padding: 200px 0 280px 0;
 }
 .our_service_page_content h1 {
-  font: normal normal normal 38px/44px Patua One;
+  font-size: 28px;
+  font-family: "Patua One";
   letter-spacing: 0.99px;
-  color: #ffffff;
 }
 .our_sevices_content_premium {
-  font: normal normal 600 16px/12px Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins";
   letter-spacing: 0.48px;
 }
 .our_sevices_content_premium_bottom {
   letter-spacing: 0.32px;
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Poppins";
 }
 .hour_button {
@@ -134,7 +149,9 @@
   border-radius: 25px;
   border: transparent;
   outline: transparent;
-  font: normal normal 600 14px/12px Poppins;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 600;
   letter-spacing: 0.28px;
   color: #d3483d;
   text-transform: uppercase;
@@ -149,119 +166,9 @@
   font-size: 20px;
   letter-spacing: 0.78px;
   color: #ffffff;
+  font-weight: 400;
+  font-family: "Patua One";
 }
-/*flip card css section  */
-/* .flip-card {
-  background-color: transparent;
-  max-width: 316px;
-  height: 470px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  height: 80%;
-  width: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-}
-.flip_doctors_image {
-  object-fit: none;
-  box-shadow: 0px 0px 20px #ccccfb;
-  border-radius: 6px;
-}
-.flipcard_front_content {
-  width: 100%;
-  height: 20%;
-  background: transparent linear-gradient(180deg, #2821b6 0%, #11118b 100%) 0%
-    0% no-repeat padding-box;
-  border-radius: 0px 0px 6px 6px;
-  position: relative;
-  bottom: 55px;
-  left: 0px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.flipcard_front_content h3 {
-  font: normal normal 600 20px/30px Poppins;
-  letter-spacing: 0.52px;
-  margin: 0;
-}
-.flipcard_front_content p {
-  font: normal normal bold 14px/36px Poppins;
-  letter-spacing: 0.28px;
-  color: #d3483d;
-}
-.flip-card-back {
-  background: transparent linear-gradient(213deg, #1515a2 0%, #a8251b 100%) 0%
-    0% no-repeat padding-box;
-  border-radius: 6px;
-  transform: rotateY(180deg);
-  padding: 32px 15px 30px 15px;
-}
-.flip-card-back h3 {
-  letter-spacing: 0.52px;
-  font-family: poppins;
-  font-size: 20px;
-  font-weight: 600;
-}
-.flip-card-back h5 {
-  letter-spacing: 0.48px;
-  font-family: poppins;
-  font-size: 16px;
-}
-.flip-card-back p {
-  letter-spacing: 0.19px;
-  font-size: 11px;
-  font-family: poppins;
-}
-.flip-card-back span {
-  letter-spacing: 0.56px;
-  font-size: 15px;
-  font-family: poppins;
-  font-weight: bold;
-}
-.flip-card-back h4 {
-  font-size: 20px;
-  font-family: poppins;
-} */
-/* .flip_card_height {
-  height: 470px;
-  width: 314px;
-} */
-/* @media only screen and (max-width: 1400px) {
-  .flip_card_height {
-    height: 500px;
-    gap: 15px;
-  }
-} */
 /*patients say css section  */
 .patients_card_header h1 {
   letter-spacing: 0.99px;
@@ -278,7 +185,6 @@
   letter-spacing: 0.44px;
   color: #212144;
   font-size: 22px;
-  /* font-family: "Poppins"; */
   font-weight: 600;
   line-height: 32px;
 }
@@ -293,132 +199,18 @@
 .patients_cards {
   background: #ebebfc;
   border-radius: 6px;
-  /* width: 1034px;
-  height: 315px; */
   padding: 55px 0 40px 50px;
   position: relative;
   width: 80%;
 }
-/* .patients_cards::before {
-  content: "";
-  position: absolute;
-  width: 1034px;
-  height: 100px;
-  background: #ebebfc;
-} */
 .card_bottom_section p {
   letter-spacing: 0.29px;
   color: #1d1d1d;
   font-size: 18px;
   font-family: "Poppins";
   font-weight: 600;
-  /* width: 739px; */
 }
-
-/* footer_section */
-.footer_section {
-  background: url(../../assests//footer-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 220px 0px 0px 0px;
-}
-.patient_sec_bottom {
-  padding-bottom: 200px;
-}
-.footer_section_part2 a {
-  text-decoration: none;
-}
-.footer_section_part2 img {
-  object-fit: contain;
-}
-.footer_section_part1 p {
-  letter-spacing: 0.48px;
-  color: #212144;
-  white-space: nowrap;
-  font-size: 16px;
-  font-family: "Poppins";
-  font-weight: 700;
-}
-.footer_section_part2 p {
-  letter-spacing: 0.64px;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "Poppins";
-}
-.footer_section_part2_contact {
-  white-space: nowrap;
-}
-.footer_section_part3_header h1 {
-  letter-spacing: 0.48px;
-  color: #fbfbfb;
-  font-size: 24px;
-  font-family: "Barlow";
-  font-weight: 700;
-}
-.left_input {
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border-radius: 30px 0px 0px 30px;
-  outline: transparent;
-  border: transparent;
-  width: 363px;
-  height: 50px;
-  padding: 20px 0 20px 20px;
-  color: #212144;
-}
-.right_input {
-  background: #d3483d 0% 0% no-repeat padding-box;
-  border-radius: 0px 30px 30px 0px;
-  outline: transparent;
-  border: transparent;
-  width: 199px;
-  height: 50px;
-  padding: 20px 0 20px 20px;
-}
-.social_links p {
-  letter-spacing: 0.64px;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "Poppins";
-  padding-right: 10px;
-  white-space: nowrap;
-}
-.social_links a {
-  text-decoration: unset;
-}
-.left_input ::placeholder {
-  font-size: 14px;
-  font-weight: 600px;
-  letter-spacing: 0.28px;
-  color: #212144;
-}
-.right_input ::placeholder {
-  font: normal normal 600 14px/12px Poppins;
-  letter-spacing: 0.28px;
-  color: #ffffff;
-}
-.footer_inputs {
-  position: relative;
-}
-.send_icon_footer {
-  object-fit: contain;
-  position: absolute;
-  right: 20px;
-  top: 15px;
-}
-.footer_bottom_content {
-  text-align: center;
-  font-size: 20px;
-  font-family: "Poppins";
-}
-.footer_line {
-  background: #4b079f;
-  opacity: 0.22;
-  width: 100%;
-  height: 4px;
-  display: inline-flex;
-}
-
-/*  */
+/* caurosel css  */
 .carousel-indicators {
   display: none;
 }
@@ -463,7 +255,6 @@
   transition: opacity 0.15s ease;
 }
 .patients_card_right_image {
-  /* float: right; */
   position: absolute;
   top: 0;
   right: 0;
@@ -496,14 +287,16 @@
   overflow: auto;
 }
 .ReactFlagsSelect-module_flagsSelect__2pfa2 {
-  text-align: -webkit-center !important;
+  margin: 5px 80px;
 }
-/*  */
+/*flip card css */
 .card-flip {
   perspective: 1000px;
   position: relative;
-  width: 250px;
-  height: 390px;
+  /* width: 250px;
+  height: 390px; */
+  width: 273px;
+  height: 417px;
 }
 
 .card-flip:hover .card-front {
@@ -543,19 +336,22 @@
 }
 .card-back h3 {
   letter-spacing: 0.52px;
-  font-family: poppins;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 600;
+  font-family: "Poppins";
+  padding-top: 10px;
 }
 .card-back h5 {
   letter-spacing: 0.48px;
   font-family: poppins;
-  font-size: 16px;
+  font-size: 14px;
 }
 .card-back p {
   letter-spacing: 0.19px;
   font-size: 11px;
   font-family: poppins;
+  padding-bottom: 25px;
 }
 .card-back span {
   letter-spacing: 0.56px;
@@ -582,16 +378,17 @@
   justify-content: center;
 }
 .flipcard_front_content h3 {
-  font: normal normal 600 20px/30px Poppins;
+  font-size: 17px;
   letter-spacing: 0.52px;
   margin: 0;
+  line-height: 30px;
 }
 .flipcard_front_content p {
-  font: normal normal bold 14px/36px Poppins;
+  font-size: 16px;
   letter-spacing: 0.28px;
   color: #d3483d;
 }
 .card {
   border: 1px solid transparent !important;
-  /* padding-bottom: 195px !important; */
 }
+

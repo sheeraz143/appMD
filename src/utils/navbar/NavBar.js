@@ -44,7 +44,7 @@ function NavBar() {
                       CONTACT US
                     </NavLink>
                   </Nav.Item>
-                  <Nav.Item className="react_flag">
+                  {/* <Nav.Item className="react_flag">
                     <NavLink>
                       <ReactFlagsSelect
                         selected={select}
@@ -53,7 +53,7 @@ function NavBar() {
                         className="raect_flag"
                       />
                     </NavLink>
-                  </Nav.Item>
+                  </Nav.Item> */}
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
