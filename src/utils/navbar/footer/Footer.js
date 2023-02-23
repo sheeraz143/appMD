@@ -6,7 +6,7 @@ import facebooklogo from "../../../assests/facebook-icon.png";
 import instalogo from "../../../assests/insta-icon.png";
 import youtubelogo from "../../../assests/youtube-icon.png";
 import sendicon from "../../../assests/send-icon.png";
-import "../footer/footer.css"
+import "../footer/footer.css";
 import ReactFlagsSelect from "react-flags-select";
 import React, { useState } from "react";
 import { FaGlobe } from "react-icons/fa";
@@ -18,7 +18,7 @@ export default function Footer() {
     <div className="footer_section">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-4 footer_sec_responsive">
             <div className="footer_section_part1">
               <img src={footerlogo} alt="logo" className="img-fluid pb-3" />
               <p>Advanced Medicine. Closer than before.</p>
@@ -29,20 +29,20 @@ export default function Footer() {
               />
             </div>
           </div>
-          <div className="col-lg-3 pt-5">
+          <div className="col-lg-3 pt-5 footer_sec_responsive">
             <div className="footer_section_part2">
               <a href="#" className="d-flex gap-3 pb-3 img-fluid">
                 <img src={locationlogo} alt="" />
-                <p>Columbus, GA</p>
+                <p>
+                  Columbus, GA, USA
+                  <br /> Coimbatore, TN, India{" "}
+                </p>
               </a>
               <a href="#" className="d-flex gap-3 pb-3 img-fluid">
                 <img src={mobilelogo} alt="" />
-                <p>USA : +1 706 610 0080 (EST)</p>
-              </a>
-              <a href="#" className="d-flex gap-3 pb-3 img-fluid">
-                <img src={mobilelogo} alt="" />
-                <p className="footer_section_part2_contact">
-                  INDIA : +91 96772 07309 (IST)
+                <p>
+                  USA : +1 706 610 0080 (EST)
+                  <br /> INDIA : +91 96772 07309 (IST)
                 </p>
               </a>
               <a href="#" className="d-flex gap-3 pb-3 img-fluid">
@@ -55,7 +55,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="col-lg-5 pt-5">
+          <div className="col-lg-5 pt-5 footer_sec_responsive">
             <div className="footer_section_part3">
               <div className="footer_section_part3_header">
                 <h1 className="pt-3">Subscribe to our NEWSLETTER</h1>
@@ -119,10 +119,10 @@ export default function Footer() {
       </div>
       <div className="container">
         <div class="row align-items-center justify-content-between">
-          <div className="col-lg-7 col-md-12 footer_bottom_content_left pt-3 pb-3">
+          <div className="col-lg-7 col-md-12 footer_bottom_content_left pt-3 pb-3 footer_sec_responsive">
             <p>© 2022 BY MARIA TECHNOLOGIES</p>
           </div>
-          <div className="col-lg-5 col-md-12 footer_bottom_content_right pt-3 pb-3 ">
+          <div className="col-lg-5 col-md-12 footer_bottom_content_right pt-3 pb-3 footer_sec_responsive">
             Powered by
             <a
               className=""

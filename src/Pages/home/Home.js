@@ -12,6 +12,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { FaClock } from "react-icons/fa";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import Footer from "../../utils/navbar/footer/Footer";
+// import intersectionimg from "../../../src/assests/Intersection-img.png";
 
 function Home() {
   return (
@@ -19,11 +20,25 @@ function Home() {
       {/* banner section */}
       <div className="banner-sec bg_gradiant">
         <div className="container pt-4 ">
-          <div className="row d-flex align-items-center justify-content-center pt-5">
-            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 header_content home_content ">
+          <div className="row pt-5 ">
+            <div className="col-lg-6 header_content home_content home_section">
               {/* <div className="home_content"> */}
               <h1>Find a DOCTOR</h1>
               <span>& Book ONLINE</span>
+              {/* <select class="selectpicker" data-live-search="true">
+                <option data-content="<span class='flag-icon flag-icon-us'></span> US">
+                  US
+                </option>
+                <option data-content="<span class='flag-icon flag-icon-gb'></span> UK">
+                  UK
+                </option>
+                <option data-content="<span class='flag-icon flag-icon-ca'></span> CD">
+                  CN
+                </option>
+                <option data-content="<span class='flag-icon flag-icon-au'></span> AS">
+                  As
+                </option>
+              </select> */}
               <h3 className="header_text text-left pt-1">
                 Fusce efficitur lacus a tellus sodales, sed efficitur purus
                 <br /> fermentum. Aenean rhoncus porttitor consequat. Aliqan
@@ -37,24 +52,28 @@ function Home() {
               </div>
               {/* </div> */}
             </div>
-            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12  pt-4">
-              <img src={HomeLogo} className="img-fluid" alt="" />
+            <div className="col-lg-6 pt-4 home_section">
+              <img
+                src={HomeLogo}
+                className="img-fluid home_img_response"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
       {/* OnlineConsultation section*/}
-      <div className="OnlineConsultation sec ">
-        <div className="container grid_bg">
-          <div className="row pt-5 ">
-            <div className="col-lg-6 d-flex flex-column justify-content-evenly">
+      <div className="OnlineConsultation sec intersection_bg ">
+        <div className="container  ">
+          <div className="row pt-5">
+            <div className="col-lg-6 d-flex flex-column justify-content-evenly online_section_top">
               <div>
                 <h3 className="home_container_secondpage_content_heading">
                   Online Medical Consultation
                 </h3>
                 <span className="bottom_gradient"></span>
               </div>
-              <p className="home_container_secondpage_content_para pt-4">
+              <p className="home_container_secondpage_content_para pt-2">
                 Located in Columbus, GA, we are here to promote steady and
                 marked improvements in your physical and mental wellbeing. We
                 pride ourselves in offering a wide array of services to help you
@@ -62,30 +81,34 @@ function Home() {
                 learn more about what we do here at appMD, and experience
                 positive change.
               </p>
-              <p className="home_container_secondpage_content_para pt-4">
+              <p className="home_container_secondpage_content_para">
                 appMD is a virtual medical consultancy service provided by US
                 trained physicians to various countries around the world.
               </p>
-              <p className="home_container_secondpage_content_para pt-4">
+              <p className="home_container_secondpage_content_para">
                 appMD’s goal is to provide treatment recommendations and medical
                 opinion for your complex medical problems be it when you are in
                 the hospital or at home.
               </p>
-              <p className="home_container_secondpage_content_para pt-4">
+              <p className="home_container_secondpage_content_para ">
                 appMD's team of physicians have trained in US residency programs
                 and currently practicing in US hospitals.
               </p>
             </div>
-            <div className="col-lg-6">
-              <img src={consultationimage} alt="" className="img-fluid" />
+            <div className="col-lg-6 online_section">
+              <img
+                src={consultationimage}
+                alt=""
+                className="img-fluid online_img_response"
+              />
             </div>
           </div>
         </div>
       </div>
       {/* OurServices Section */}
       <div className="ourservices_section">
-        <div className="container pt-5">
-          <div className="col-lg-12 d-flex justify-content-between align-items-center view_more_color">
+        <div className="container pt-5 our_service_right_bg our_service_section">
+          <div className="col-lg-12 d-flex justify-content-between align-items-center view_more_color our_service_section_header">
             <div className="d-flex flex-column ">
               <h2 className="our_services_header_content">Our Services</h2>
               <span className="bottom_gradient bg_white_bottom"></span>
@@ -100,7 +123,7 @@ function Home() {
         </div>
         <div className="container pt-1 ">
           <div className="row pt-5 ">
-            <div className="col-lg-6 md-2">
+            <div className="col-lg-6 md-2 our_service_section_bottom">
               <div className="">
                 <img src={Ourservicebig} alt="" className="img-fluid" />
               </div>
@@ -132,7 +155,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 our_service_section_bottom">
               <div className="">
                 <div className="d-flex  align-items-center gap-3">
                   <img src={Ourservice} alt="" className="img-fluid" />
@@ -168,11 +191,11 @@ function Home() {
         </div>
       </div>
       {/*flip_card_section  */}
-      <div className="flip_card_section pb-5">
+      <div className="flip_card_section pb-5 grid_bg">
         <div className="container">
-          <div className="row d-flex ">
+          <div className="cards_wrap">
             {/* flip card1 */}
-            <div className="col-lg-3  ">
+            <div className="cards_wrap_content  ">
               <div class="card">
                 <div class="card-flip">
                   <div class="card-front">
@@ -199,7 +222,7 @@ function Home() {
               </div>
             </div>
             {/*flip card2  */}
-            <div className="col-lg-3 ">
+            <div className="cards_wrap_content ">
               <div class="card">
                 <div class="card-flip">
                   <div class="card-front">
@@ -226,7 +249,7 @@ function Home() {
               </div>
             </div>
             {/*flip card3 */}
-            <div className="col-lg-3 ">
+            <div className="cards_wrap_content ">
               <div class="card">
                 <div class="card-flip">
                   <div class="card-front">
@@ -253,7 +276,7 @@ function Home() {
               </div>
             </div>
             {/*flip card4 */}
-            <div className="col-lg-3 ">
+            <div className="cards_wrap_content ">
               <div class="card">
                 <div class="card-flip">
                   <div class="card-front">
@@ -283,10 +306,10 @@ function Home() {
         </div>
       </div>
       {/* patients_say_section */}
-      <div className="patients_say_section pt-5">
+      <div className="patients_say_section pt-5 grid_pink_bg">
         <div className="container patient_sec_bottom">
           <div className="row position-relative">
-            <div className="col-lg-12">
+            <div className="col-lg-12 patients_sec_responsive">
               <div className="patients_card_header d-flex flex-column">
                 <h1>What our patients say</h1>
                 <span className="bottom_gradient"></span>
@@ -316,7 +339,11 @@ function Home() {
                   </p>
                 </div>
               </div> */}
-              <Carousel interval={null} style={{ position: "relative" }}>
+              <Carousel
+                style={{ position: "relative" }}
+                slide={false}
+                interval={null}
+              >
                 <Carousel.Item>
                   <div className="patients_cards mt-5">
                     <div className="card_top_section">
@@ -359,7 +386,7 @@ function Home() {
                     </div>
                     <div className="card_bottom_section">
                       <p>
-                        sheeraz vestibulum felis eget dui porttitor, ut sodales
+                        fahad vestibulum felis eget dui porttitor, ut sodales
                         <br />
                         massa viverra. Curasd bitur sollicitudin a nibh
                         placerat.
@@ -375,7 +402,7 @@ function Home() {
               <img
                 src={patientsimage}
                 alt=""
-                className="img-fluid patients_card_right_image"
+                className="img-fluid patients_card_right_image patients_right_img_size"
               />
             </div>
             {/* <div className="col-lg-4 pt-2">

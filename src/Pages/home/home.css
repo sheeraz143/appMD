@@ -9,11 +9,13 @@
   letter-spacing: 1.58px;
   text-shadow: 0px 3px 6px #00000029;
   margin: 0;
-  font-size: 60px;
+  font-size: 53px;
   font-family: "Barlow";
+  font-weight: lighter;
 }
 .home_content span {
-  font-weight: 700;
+  font-family: "Barlow";
+  font-weight: bold;
   font-size: 60px;
 }
 .header_text {
@@ -21,7 +23,7 @@
   font-family: "Poppins";
   font-size: 14px;
   margin: 0;
-  line-height: 25px;
+  line-height: 20px;
 }
 .home_bg {
   display: flex;
@@ -37,6 +39,7 @@
   background-size: 100% 100%;
   width: 100%;
   z-index: -1;
+  position: relative;
 }
 .but_get_started {
   border-radius: 25px;
@@ -54,6 +57,18 @@
   padding: 15px 18px;
   font-family: "Poppins";
 }
+.home_img_response {
+  max-width: 75%;
+}
+@media (max-width: 992px) {
+  .home_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+}
 /* online medical  section css */
 .home_container_secondpage_content_heading {
   color: #212144;
@@ -69,16 +84,63 @@
   background: linear-gradient(265deg, #3d3dd3, #d3483d);
   border-radius: 5px;
 }
-
-/* our services section css */
-.grid_bg {
+.online_img_response {
+  max-width: 75%;
+}
+.OnlineConsultation::before {
+  content: "";
+  background-image: url(../../assests//Intersection-img.png);
+  background-size: 290px 500px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -134px;
+  top: 147px;
+  background-repeat: no-repeat;
+}
+.OnlineConsultation::after {
+  content: "";
   background-image: url(../../assests/Grid-img.png);
   background-repeat: no-repeat;
   background-position: 100% 0%;
+  position: absolute;
+  top: -95px;
+  right: -3px;
+  width: 27%;
+  height: 50%;
+  z-index: -1;
 }
+@media (max-width: 992px) {
+  .online_section_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding: 0 50px 30px 50px;
+  }
+  .online_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+/* our services section css */
 .bg_white_bottom {
   background: white !important;
 }
+/* .our_service_right_bg {
+  position: relative;
+}
+.our_service_right_bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assests/Intersection-img.png);
+  background-repeat: no-repeat;
+} */
 .our_services_header_content {
   margin: 0;
   font-size: 30px;
@@ -86,19 +148,27 @@
   font-family: "Patua One";
   letter-spacing: 0.99px;
 }
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 12px;
+  /* justify-content: center; */
+}
 .view_more {
   letter-spacing: 0.28px;
   text-decoration: none;
   font-size: 14px;
   color: #ffffff;
   font-weight: 500;
+  text-decoration: unset !important;
 }
 .view_more_color a:hover {
   color: #ffffff;
 }
 .home_container_secondpage_content_para {
   color: #1d1d1d;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Poppins";
   font-weight: bold;
   letter-spacing: 0.32px;
@@ -114,6 +184,7 @@
   font-size: 28px;
   font-family: "Patua One";
   letter-spacing: 0.99px;
+  line-height: 1;
 }
 .our_sevices_content_premium {
   font-size: 14px;
@@ -169,6 +240,31 @@
   font-weight: 400;
   font-family: "Patua One";
 }
+@media (max-width: 992px) {
+  .ourservices_section {
+    padding: 200px 0 340px 0;
+  }
+  .our_service_section_header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 50px !important;
+  }
+  .our_service_section {
+    margin-top: 95px;
+  }
+  .our_service_section_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+}
+/* online consultation css */
+.OnlineConsultation {
+  position: relative;
+}
 /*patients say css section  */
 .patients_card_header h1 {
   letter-spacing: 0.99px;
@@ -176,51 +272,48 @@
   font-size: 38px;
   font-family: "Patua One";
   margin: 0;
+  line-height: 1.5;
 }
-.card_bottom_section p {
-  color: #1d1d1d;
+.profile_details {
+  margin-bottom: 32px;
 }
 .profile_details_name h5 {
   margin: 0;
   letter-spacing: 0.44px;
   color: #212144;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 32px;
 }
 .profile_details_name p {
   letter-spacing: 0.36px;
   color: #212144;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Poppins";
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
 }
 .patients_cards {
   background: #ebebfc;
   border-radius: 6px;
   padding: 55px 0 40px 50px;
   position: relative;
-  width: 80%;
+  width: 70%;
 }
 .card_bottom_section p {
   letter-spacing: 0.29px;
   color: #1d1d1d;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 500;
 }
 /* caurosel css  */
 .carousel-indicators {
   display: none;
 }
-.carousel-control-prev {
-  right: 80px;
-  left: unset;
-}
 .carousel-control-next {
   position: absolute;
-  top: 80px;
+  top: 130px;
   bottom: 200px;
   z-index: 1;
   display: flex;
@@ -234,12 +327,12 @@
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
-  left: 460px;
+  left: 510px;
 }
 .carousel-control-prev {
   position: absolute;
-  left: 404px;
-  top: -115px;
+  left: 470px;
+  top: -60px;
   bottom: 0;
   z-index: 1;
   display: flex;
@@ -256,8 +349,125 @@
 }
 .patients_card_right_image {
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 0;
+}
+.patients_right_img_size {
+  height: 100% !important;
+}
+.next_card_select {
+  display: none;
+}
+@media (min-width: 1100px) and (max-width: 1150px) {
+  .carousel-control-prev {
+    left: 400px;
+  }
+  .carousel-control-next {
+    left: 440px;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1100px) {
+  .carousel-control-prev {
+    left: 360px;
+  }
+  .carousel-control-next {
+    left: 400px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1050px) {
+  .carousel-control-prev {
+    left: 340px;
+  }
+  .carousel-control-next {
+    left: 380px;
+  }
+}
+@media (min-width: 950px) and (max-width: 1000px) {
+  .carousel-control-prev {
+    left: 290px;
+  }
+  .carousel-control-next {
+    left: 340px;
+  }
+}
+@media (min-width: 680px) and (max-width: 810px) {
+  .carousel-control-prev {
+    left: 460px !important;
+  }
+  .carousel-control-next {
+    left: 500px !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 680px) {
+  .carousel-control-prev {
+    left: 400px !important;
+  }
+  .carousel-control-next {
+    left: 440px !important;
+  }
+}
+@media (min-width: 560px) and (max-width: 600px) {
+  .carousel-control-prev {
+    left: 360px !important;
+    top: -66px !important;
+  }
+  .carousel-control-next {
+    left: 400px !important;
+    top: 127px !important;
+  }
+}
+@media (min-width: 540px) and (max-width: 560px) {
+  .carousel-control-prev {
+    left: 325px !important;
+    top: -89px !important;
+  }
+  .carousel-control-next {
+    left: 360px !important;
+    top: 110px !important;
+  }
+}
+@media (min-width: 500px) and (max-width: 540px) {
+  .carousel-control-prev {
+    left: 300px !important;
+    top: -140px !important;
+  }
+  .carousel-control-next {
+    left: 330px !important;
+    top: 60px !important;
+  }
+}
+@media (min-width: 450px) and (max-width: 500px) {
+  .carousel-control-prev {
+    left: 280px !important;
+    top: -140px !important;
+  }
+  .carousel-control-next {
+    left: 320px !important;
+    top: 60px !important;
+  }
+}
+@media (max-width: 950px) {
+  .patients_card_right_image {
+    position: unset;
+    padding-top: 50px;
+  }
+  .patients_cards {
+    width: 100%;
+  }
+  .carousel-control-prev {
+    left: 580px;
+  }
+  .carousel-control-next {
+    left: 620px;
+  }
+  .patients_sec_responsive {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  .patients_right_img_size {
+    width: 75% !important;
+  }
 }
 
 /* dropdown css */
@@ -290,6 +500,27 @@
   margin: 5px 80px;
 }
 /*flip card css */
+.grid_bg {
+  position: relative;
+}
+.grid_bg::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../assests/Grid-img.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: -100px;
+  background-size: 240px 222px;
+}
+/* .grid_bg::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../assests/Intersection-pink-bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+} */
 .card-flip {
   perspective: 1000px;
   position: relative;
@@ -391,4 +622,25 @@
 .card {
   border: 1px solid transparent !important;
 }
+@media (max-width: 992px) {
+  .cards_wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* drop down select */
+/* .home_content span{
+  font-weight: unset !important;
+  font-size: unset !important;
+} */
 
+.carousel-control-next-icon {
+  background-image: url(../../assests/right-arrow-icon.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.carousel-control-prev-icon {
+  background-image: url(../../assests/left-arrow-icon.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
