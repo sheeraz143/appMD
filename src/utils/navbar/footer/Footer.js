@@ -66,42 +66,46 @@ export default function Footer() {
                     className="left_input"
                   />
                   <div className="d-flex footer_inputs">
-                    {/* <input
-                        type="text"
-                        placeholder="SUBSCRIBE NOW"
-                        className="right_input"
-                      /> */}
                     <a className="right_input" href="#">
                       SUBSCRIBE NOW
                     </a>
                     <img
                       src={sendicon}
                       alt=""
-                      className="img-fluid send_icon_footer"
+                      className="img-fluid send_icon_footer img-fluid"
                     />
                   </div>
                 </div>
                 <div className="social_links d-flex align-items-center pt-4">
                   <span>Follow us on</span>
-                  <a
-                    href="#"
-                    className="d-flex align-items-center gap-2 img-fluid"
-                  >
-                    <img src={facebooklogo} alt="" />
+                  <a href="#" className="d-flex align-items-center gap-2 ">
+                    <img
+                      src={facebooklogo}
+                      alt=""
+                      className=" social_img_response img-fluid"
+                    />
                     <p>Facebook</p>
                   </a>
                   <a
                     href="#"
                     className="d-flex align-items-center gap-2 img-fluid"
                   >
-                    <img src={youtubelogo} alt="" />
+                    <img
+                      src={youtubelogo}
+                      alt=""
+                      className=" social_img_response img-fluid"
+                    />
                     <p>Youtube</p>
                   </a>
                   <a
                     href="#"
                     className="d-flex align-items-center gap-2 img-fluid"
                   >
-                    <img src={instalogo} alt="" />
+                    <img
+                      src={instalogo}
+                      alt=""
+                      className=" social_img_response img-fluid"
+                    />
                     <p>Instagram</p>
                   </a>
                 </div>

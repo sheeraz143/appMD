@@ -12,11 +12,12 @@ import Carousel from "react-bootstrap/Carousel";
 import { FaClock } from "react-icons/fa";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import Footer from "../../utils/navbar/footer/Footer";
-// import intersectionimg from "../../../src/assests/Intersection-img.png";
+import NavBar from "../../utils/navbar/NavBar";
 
 function Home() {
   return (
     <div>
+      <NavBar />
       {/* banner section */}
       <div className="banner-sec bg_gradiant">
         <div className="container pt-4 ">
@@ -25,20 +26,6 @@ function Home() {
               {/* <div className="home_content"> */}
               <h1>Find a DOCTOR</h1>
               <span>& Book ONLINE</span>
-              {/* <select class="selectpicker" data-live-search="true">
-                <option data-content="<span class='flag-icon flag-icon-us'></span> US">
-                  US
-                </option>
-                <option data-content="<span class='flag-icon flag-icon-gb'></span> UK">
-                  UK
-                </option>
-                <option data-content="<span class='flag-icon flag-icon-ca'></span> CD">
-                  CN
-                </option>
-                <option data-content="<span class='flag-icon flag-icon-au'></span> AS">
-                  As
-                </option>
-              </select> */}
               <h3 className="header_text text-left pt-1">
                 Fusce efficitur lacus a tellus sodales, sed efficitur purus
                 <br /> fermentum. Aenean rhoncus porttitor consequat. Aliqan
@@ -119,6 +106,20 @@ function Home() {
               </a>
               <FaAngleDoubleRight />
             </div>
+            <select class="selectpicker" data-live-search="true">
+              <option data-content="<span class='flag-icon flag-icon-us'></span> US">
+                US
+              </option>
+              <option data-content="<span class='flag-icon flag-icon-gb'></span> UK">
+                UK
+              </option>
+              <option data-content="<span class='flag-icon flag-icon-ca'></span> CD">
+                CN
+              </option>
+              <option data-content="<span class='flag-icon flag-icon-au'></span> AS">
+                As
+              </option>
+            </select>
           </div>
         </div>
         <div className="container pt-1 ">

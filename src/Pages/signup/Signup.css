@@ -1,0 +1,52 @@
+.signup_sec {
+  background: transparent linear-gradient(237deg, #2f2fc5 0%, #cc3f34 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0;
+}
+.signup_page {
+  background: #ffffff;
+  box-shadow: 0px 3px 13px #00000059;
+  border-radius: 20px;
+}
+.signup_page_left_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup_page_right_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup_page_right_content_header {
+  letter-spacing: 0.56px;
+  color: #212144;
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+.signup_page_right_content_para {
+  letter-spacing: 0px;
+  color: #212144;
+  margin: 0;
+  font-size: 36px;
+  font-family: barlow;
+  font-weight: 500;
+}
+.right_side {
+  background: #e7e7fe;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left_img {
+  height: 70%;
+}
+.app_logo_responsive {
+  padding: 25px 0;
+}

@@ -58,7 +58,7 @@
   font-family: "Poppins";
 }
 .home_img_response {
-  max-width: 75%;
+  max-width: 80%;
 }
 @media (max-width: 992px) {
   .home_section {
@@ -67,6 +67,9 @@
     align-items: center;
     flex-direction: column;
     padding-top: 60px;
+  }
+  .home_img_response {
+    max-width: 60%;
   }
 }
 /* online medical  section css */
@@ -130,17 +133,6 @@
 .bg_white_bottom {
   background: white !important;
 }
-/* .our_service_right_bg {
-  position: relative;
-}
-.our_service_right_bg::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../../assests/Intersection-img.png);
-  background-repeat: no-repeat;
-} */
 .our_services_header_content {
   margin: 0;
   font-size: 30px;
@@ -242,7 +234,7 @@
 }
 @media (max-width: 992px) {
   .ourservices_section {
-    padding: 200px 0 340px 0;
+    padding: 200px 0 320px 0;
   }
   .our_service_section_header {
     display: flex !important;
@@ -468,6 +460,9 @@
   .patients_right_img_size {
     width: 75% !important;
   }
+  .patient_sec_bottom {
+    padding-bottom: 0 !important;
+  }
 }
 
 /* dropdown css */
@@ -628,12 +623,6 @@
     justify-content: center;
   }
 }
-/* drop down select */
-/* .home_content span{
-  font-weight: unset !important;
-  font-size: unset !important;
-} */
-
 .carousel-control-next-icon {
   background-image: url(../../assests/right-arrow-icon.svg);
   background-size: 20px 20px;
@@ -643,4 +632,13 @@
   background-image: url(../../assests/left-arrow-icon.svg);
   background-size: 20px 20px;
   background-repeat: no-repeat;
+}
+/* drop down css */
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(
+    .input-group-btn
+  ) {
+  width: 90px;
+}
+.bootstrap-select > .dropdown-toggle {
+  background-color: transparent;
 }
