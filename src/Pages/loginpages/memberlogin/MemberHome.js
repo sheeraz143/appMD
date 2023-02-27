@@ -1,11 +1,6 @@
 import "./MemberSignUp.css";
 import appmdlogo from "../../../assests/app-md-logo.png";
 import signupleftimg from "../../../assests/signup-left-logo.png";
-// import firstnameicon from "../../../assests/firstname-icon.svg";
-// import emailicon from "../../../assests/email-icon.svg";
-// import mobilenumicon from "../../../assests/mobilenum-icon.svg";
-// import passwordicon from "../../../assests/password-icon.svg";
-// import { FaAngleDoubleRight } from "react-icons/fa";
 import MemberSignUp from "./MemberSignUp";
 import MemberSignIn from "./MemberSignIn";
 import { useState } from "react";
@@ -15,15 +10,19 @@ export default function MemberHome() {
   return (
     <div className="MemberSignUp_sec">
       <div className="container MemberSignUp_page">
-        <div className="row">
-          <div className="col-lg-7 membersignup_page_left_content">
-            <img src={appmdlogo} alt="" className="img-fluid " />
-            <img src={signupleftimg} alt="" className="img-fluid" />
+        <div className="row member_row">
+          <div className="col-lg-6 membersignup_page_left_content">
+            <img src={appmdlogo} alt="" className="img-fluid app_logo_width" />
+            <img
+              src={signupleftimg}
+              alt=""
+              className="img-fluid sigup_left_img_width"
+            />
           </div>
-          <div className="col-lg-5 member_container_right">
+          <div className="col-lg-6 member_container_right">
             <div className="member_container_right_side">
-              {!signInSelected && <h1>Member</h1>}
-              <div>
+              {!signInSelected && <h1 className="pt-3">Member</h1>}
+              <div className="button_headers d-flex gap-2">
                 <button
                   className={
                     !signInSelected

@@ -3,40 +3,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 90px 0;
+  padding: 45px 0;
+}
+.member_row {
+  height: 567px;
+}
+.app_logo_width {
+  padding: 25px 0;
+  height: 112px;
+}
+.sigup_left_img_width {
+  height: 70%;
 }
 .MemberSignUp_page {
   background: #ffffff;
   box-shadow: 0px 3px 13px #00000059;
   border-radius: 20px;
+  height: 567px;
+  width: 900px !important;
 }
 .membersignup_page_left_content {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.left_img {
-  height: 80%;
+  height: 567px;
+  padding-top: 20px;
 }
 .member_container_right {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   padding: 25px;
 }
 .member_container_right_side {
-  /* background: #e7e7fe;
-  height: 735px;
+  background: #e7e7fe;
   border-radius: 20px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px; */
-  background: #e7e7fe;
-  height: 735px;
-  border-radius: 20px;
+  height: 530px;
 }
 .login_headers_selected {
   background: #212144 0% 0% no-repeat padding-box;
@@ -44,9 +46,8 @@
   text-decoration: unset;
   letter-spacing: 0.36px;
   color: #ffffff;
-  padding: 5px 35px;
-  font-size: 14px;
-
+  padding: 2px 26px;
+  font-size: 12px;
   font-weight: 600;
   font-family: "Poppins";
 }
@@ -55,8 +56,8 @@
   border-radius: 25px;
   text-decoration: unset;
   letter-spacing: 0.36px;
-  padding: 5px 35px;
-  font-size: 14px;
+  padding: 2px 26px;
+  font-size: 12px;
   color: #212144;
   font-weight: 600;
   font-family: "Poppins";
@@ -65,36 +66,40 @@
   letter-spacing: 0.48px;
   color: #212144;
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Poppins";
 }
-.login_input input {
+.login_input_signin input {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 10px #c5c5ff;
   border-radius: 35px;
   border: transparent;
   outline: transparent;
-  /* padding: 18px 160px 18px 58px; */
-  height: 50px;
+  padding: 18px 160px 18px 58px;
+  height: 40px;
   letter-spacing: 0.32px;
   color: #212144;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "Poppins";
 }
 .login_inputs {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 11px;
 }
 .login_input {
   position: relative;
 }
 .input_img {
   position: absolute;
-  top: 14px;
+  top: 12px;
   left: 22px;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 .checkbox_line a {
   text-decoration: unset;
@@ -103,12 +108,12 @@
   letter-spacing: 0.24px;
   color: #212144;
   margin: 0 !important;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   font-family: poppins;
 }
 .checkbox_line a {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   font-family: poppins;
   letter-spacing: 0.24px;
@@ -121,12 +126,12 @@
 .create_but {
   background: #d3483d 0% 0% no-repeat padding-box;
   border-radius: 25px;
-  padding: 15px 15px 15px 15px;
+  padding: 10px 15px 9px 15px;
   text-decoration: unset;
   color: #ffffff;
   letter-spacing: 0.28px;
   font-family: poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 .create_but:hover {
@@ -138,7 +143,7 @@
   letter-spacing: 0.28px;
   color: #d3483d;
   font-family: poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 .signin_link:hover {
@@ -147,13 +152,13 @@
 }
 .already_have_account {
   font-family: poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #212144;
 }
 .sign_up_for label {
   font-family: poppins;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.32px;
   color: #212144;
@@ -161,12 +166,14 @@
 .sign_up_for select {
   box-shadow: 0px 3px 10px #c5c5ff;
   border-radius: 35px;
-  padding: 17px 125px 18px 20px;
+  padding: 8px 115px 9px 16px;
   background: #ffffff;
   outline: transparent;
   border: transparent;
   color: #212144;
   border-right: 16px solid transparent;
+  font-size: 12px;
+  font-family: poppins;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

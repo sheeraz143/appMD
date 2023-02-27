@@ -8,51 +8,54 @@
   font-weight: 500;
   font-family: "Poppins";
 }
-/* .membersign_container_right_side {
-  background: #e7e7fe;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 50px 0;
-} */
 .login_inputs {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-bottom: 50px;
 }
-/* .login_headers_signin {
-  padding-bottom: 80px;
-} */
 .or {
   letter-spacing: 0.28px;
   color: #212144;
-  font-size: 14px;
+  font-size: 12px;
   font-family: poppins;
   font-weight: 500;
   align-self: center;
 }
-/* .member_container_sigin_right_side {
-  background: #e7e7fe;
-  height: 735px;
-  border-radius: 20px;
-} */
+
+.login_inputs_signin {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 50px;
+}
+.login_input input {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #c5c5ff;
+  border-radius: 35px;
+  border: transparent;
+  outline: transparent;
+  padding: 25px 125px 19px 60px;
+  height: 40px;
+  letter-spacing: 0.32px;
+  color: #212144;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
 .login_inputs {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 11px;
 }
-.login_input {
+.login_input_signin {
   position: relative;
 }
-.input_img {
+/* .input_img {
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 22px;
-}
+} */
 .checkbox_line a {
   text-decoration: unset;
 }
@@ -60,16 +63,21 @@
   letter-spacing: 0.24px;
   color: #212144;
   margin: 0 !important;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   font-family: poppins;
 }
 .checkbox_line a {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   font-family: poppins;
   letter-spacing: 0.24px;
   color: #d3483d;
+}
+.check_box_signin {
+  display: flex;
+  align-items: center;
+  gap: 120px;
 }
 .create_but_parent {
   display: flex;
@@ -83,10 +91,13 @@
   color: #ffffff;
   letter-spacing: 0.28px;
   font-family: poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 .create_but:hover {
   color: unset !important;
   text-decoration: unset !important;
+}
+.login_input_signin input {
+  padding: 25px 125px 19px 60px !important;
 }

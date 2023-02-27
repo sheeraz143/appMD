@@ -1,9 +1,20 @@
 import React from "react";
+import NavBar from "../../utils/navbar/NavBar";
+import "../contact/contact.css";
+
 
 function ContactUs() {
   return (
     <div>
-      <h1>This is the ContactUs page</h1>
+      <NavBar />
+      <div className="contactus_sec">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6"></div>
+            <div className="col-lg-6"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

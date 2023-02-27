@@ -31,7 +31,7 @@ export default function MemberSignUp() {
         <input placeholder="Password" type="password" />
       </div>
       <div className="sign_up_for d-flex gap-2 align-items-center">
-        <label>Are you signing up for?</label>
+        <label className="pt-2">Are you signing up for?</label>
         <select>
           <option>self</option>
           <option>self</option>
@@ -48,10 +48,9 @@ export default function MemberSignUp() {
           <FaAngleDoubleRight style={{ marginLeft: "20px" }} />
         </a>
       </div>
-      <div className="d-flex align-items-center align-self-center">
+      <div className="d-flex align-items-center align-self-center gap-1">
         <p className="already_have_account">Already have an account?</p>
         <a href="#" className="signin_link">
-          {" "}
           SIGN IN
         </a>
       </div>

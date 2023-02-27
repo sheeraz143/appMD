@@ -3,36 +3,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 90px 0;
+  padding: 40px 0;
 }
 .signup_page {
   background: #ffffff;
   box-shadow: 0px 3px 13px #00000059;
   border-radius: 20px;
+  height: 567px;
+  width: 900px !important;
+}
+.signup_page_row {
+  height: 560px;
+}
+.signup_type_img {
+  height: 145px;
 }
 .signup_page_left_content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 567px;
 }
 .signup_page_right_content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 30px;
 }
 .signup_page_right_content_header {
   letter-spacing: 0.56px;
   color: #212144;
   margin: 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   font-family: "Poppins";
+  padding-bottom: 20px;
 }
 .signup_page_right_content_para {
   letter-spacing: 0px;
   color: #212144;
   margin: 0;
-  font-size: 36px;
+  font-size: 25px;
   font-family: barlow;
   font-weight: 500;
 }
@@ -43,10 +51,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 506px;
 }
 .left_img {
   height: 70%;
 }
 .app_logo_responsive {
   padding: 25px 0;
+  height: 112px;
+}
+.button_headers {
+  padding: 20px 0;
+}
+.signupimage_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.signup_type {
+  display: flex;
+}
+.signupimage_content p {
+  letter-spacing: 0.52px;
+  color: #212144;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: poppins;
 }

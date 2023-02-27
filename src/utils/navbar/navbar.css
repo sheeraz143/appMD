@@ -3,21 +3,17 @@
 }
 .navbar-nav {
   gap: 24px;
-  /* font: normal normal 600 16px/12px Poppins; */
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.16px;
   align-items: center;
 }
 .nav-item a {
-  /* font: normal normal 600 16px/12px Poppins;
-  letter-spacing: 0.16px; */
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   position: relative;
   color: #ffffff;
-  /* font-size: 14px; */
 }
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff !important;

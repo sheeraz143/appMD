@@ -1,0 +1,30 @@
+.about_header-section {
+  background: url(../../assests/navbar_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 190px;
+}
+.left_content {
+  text-decoration: unset;
+  display: flex;
+  border: 2px solid #212144;
+  border-radius: 10px;
+  justify-content: center;
+  width: 270px;
+  height: 50px;
+  align-items: center;
+}
+.left_content:hover {
+  color: unset !important;
+}
+.left_content p {
+  letter-spacing: 0.62px;
+  color: #212144;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.aboutus_right{
+  background: #e7e7fe;
+  border-radius: 8px;
+}

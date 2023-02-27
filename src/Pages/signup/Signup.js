@@ -9,7 +9,7 @@ export default function Signup() {
   return (
     <div className="signup_sec">
       <div className="container signup_page">
-        <div className="row">
+        <div className="row signup_page_row">
           <div className="col-lg-6 signup_page_left_content">
             <img
               src={appmdlogo}
@@ -20,22 +20,43 @@ export default function Signup() {
           </div>
           <div className="col-lg-6 signup_page_right_content">
             <div className="right_side">
-              <h1 className="signup_page_right_content_header pt-5">Sign Up</h1>
-              <h3 className="signup_page_right_content_para pt-5">
+              <h1 className="signup_page_right_content_header pt-2">Sign Up</h1>
+              <h3 className="signup_page_right_content_para pt-2">
                 Are you an appMD
               </h3>
               <div>
                 <div className="signup_type">
-                  <a href="membersignup">
-                    <img src={memberimg} alt="" className="img-fluid" />
-                  </a>
-                  <a href="doctorsignup">
-                    <img src={doctorimg} alt="" className="img-fluid" />
-                  </a>
+                  <div className="signupimage_content">
+                    <a href="membersignup">
+                      <img
+                        src={memberimg}
+                        alt=""
+                        className="img-fluid signup_type_img"
+                      />
+                    </a>
+                    <p>Member</p>
+                  </div>
+                  <div className="signupimage_content">
+                    <a href="doctorsignup">
+                      <img
+                        src={doctorimg}
+                        alt=""
+                        className="img-fluid signup_type_img"
+                      />
+                    </a>
+                    <p>Doctor</p>
+                  </div>
                 </div>
-                <a href="">
-                  <img src={bussinessimg} alt="" className="img-fluid" />
-                </a>
+                <div className="signupimage_content">
+                  <a href="">
+                    <img
+                      src={bussinessimg}
+                      alt=""
+                      className="img-fluid signup_type_img"
+                    />
+                  </a>
+                  <p>Business</p>
+                </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,25 @@
+.otp_expires {
+  letter-spacing: 0.28px;
+  color: #212144;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins";
+  padding: 15px 0 30px 0;
+}
+.otp_expires p {
+  letter-spacing: 0.28px;
+  color: #212144;
+  opacity: 0.5;
+  font-weight: 600;
+  font-style: italic;
+  size: 14px;
+}
+.otp_inputs input {
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 10px !important;
+  border-radius: 50%;
+  border: transparent;
+  outline: transparent;
+  color: #212144;
+}

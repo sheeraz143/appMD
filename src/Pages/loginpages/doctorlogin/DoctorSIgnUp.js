@@ -67,7 +67,6 @@ export default function DoctorSignUp() {
       <div className="d-flex align-items-center align-self-center">
         <p className="already_have_account">Already have an account?</p>
         <a href="#" className="signin_link">
-          {" "}
           SIGN IN
         </a>
       </div>

@@ -1,11 +1,13 @@
 import passwordicon from "../../../assests/password-icon.svg";
 import emailicon from "../../../assests/email-icon.svg";
-import appmdlogo from "../../../assests/app-md-logo.png";
-import signupleftimg from "../../../assests/signup-left-logo.png";
+// import appmdlogo from "../../../assests/app-md-logo.png";
+// import signupleftimg from "../../../assests/signup-left-logo.png";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import fbicon from "../../../assests/form-fb-icon.svg";
 import googleicon from "../../../assests/form-google-icon.svg";
 import "./MemberSignIn.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function MemberSignIn() {
   // return (
@@ -73,20 +75,23 @@ export default function MemberSignIn() {
 
   return (
     <div className="member_container_sigin_right_side">
-      <div className="login_inputs ">
-        <div className="login_input">
+      <div className="login_inputs_signin">
+        <div className="login_input_signin">
           <img src={emailicon} alt="" className="img-fluid input_img" />
           <input placeholder="Email Id" type="text" />
         </div>
-        <div className="login_input">
+        <div className="login_input_signin">
           <img src={passwordicon} alt="" className="img-fluid input_img" />
           <input placeholder="Password" type="password" />
         </div>
 
-        <div class="form-check checkbox_line">
+        <div class="form-check checkbox_line check_box_signin">
           <input class="form-check-input" type="checkbox" value="" />
           <label>Remember Me</label>
-          <a href="#">Forgot Password?</a>
+          <div>
+            {/* <a href="forgothome" >Forgot Password?</a> */}
+            <Link to="/forgotpassword">Forgot Password?</Link>
+          </div>
         </div>
         <div className="create_but_parent">
           <a href="#" className="create_but">
@@ -103,7 +108,7 @@ export default function MemberSignIn() {
           </a>
           <a href="#"></a>
         </div>
-        <div className="d-flex align-items-center align-self-center">
+        <div className="d-flex align-items-center align-self-center gap-1">
           <p className="already_have_account">Don't have an account?</p>
           <a href="#" className="signin_link">
             SIGN UP
