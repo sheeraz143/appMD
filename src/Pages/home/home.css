@@ -508,19 +508,9 @@
   top: -100px;
   background-size: 240px 222px;
 }
-/* .grid_bg::after {
-  content: "";
-  position: absolute;
-  background-image: url(../../assests/Intersection-pink-bg.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-} */
 .card-flip {
   perspective: 1000px;
   position: relative;
-  /* width: 250px;
-  height: 390px; */
   width: 273px;
   height: 417px;
 }

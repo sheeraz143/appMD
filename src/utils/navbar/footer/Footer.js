@@ -7,13 +7,13 @@ import instalogo from "../../../assests/insta-icon.png";
 import youtubelogo from "../../../assests/youtube-icon.png";
 import sendicon from "../../../assests/send-icon.png";
 import "../footer/footer.css";
-import ReactFlagsSelect from "react-flags-select";
-import React, { useState } from "react";
+// import ReactFlagsSelect from "react-flags-select";
+// import React, { useState } from "react";
 import { FaGlobe } from "react-icons/fa";
 
 export default function Footer() {
-  const [select, setSelect] = useState("US");
-  const onSelect = code => setSelect(code);
+  // const [select, setSelect] = useState("US");
+  // const onSelect = code => setSelect(code);
   return (
     <div className="footer_section">
       <div className="container">
@@ -22,11 +22,25 @@ export default function Footer() {
             <div className="footer_section_part1">
               <img src={footerlogo} alt="logo" className="img-fluid pb-3" />
               <p>Advanced Medicine. Closer than before.</p>
-              <ReactFlagsSelect
+              {/* <ReactFlagsSelect
                 selected={select}
                 onSelect={onSelect}
                 countries={["IN", "US"]}
-              />
+              /> */}
+              <select class="selectpicker" data-live-search="true">
+                <option data-content="<span class='flag-icon flag-icon-us'></span> US">
+                  US
+                </option>
+                <option data-content="<span class='flag-icon flag-icon-gb'></span> UK">
+                  UK
+                </option>
+                <option data-content="<span class='flag-icon flag-icon-ca'></span> CD">
+                  CN
+                </option>
+                <option data-content="<span class='flag-icon flag-icon-au'></span> AS">
+                  As
+                </option>
+              </select>
             </div>
           </div>
           <div className="col-lg-3 pt-5 footer_sec_responsive">

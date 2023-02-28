@@ -24,7 +24,52 @@
   font-weight: 600;
   font-family: "Poppins";
 }
-.aboutus_right{
+.aboutus_right {
   background: #e7e7fe;
   border-radius: 8px;
+  padding: 40px;
 }
+.aboutus_right h1 {
+  letter-spacing: 0.88px;
+  color: #212144;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Patua One";
+}
+.aboutus_right p {
+  letter-spacing: 0.26px;
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.aboutus_top_section h1 {
+  letter-spacing: 0.99px;
+  color: #212144;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Patua One";
+}
+.aboutus_sec {
+  position: relative;
+}
+.aboutus_sec::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../assests/Grid-img.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 130px;
+  background-size: 240px 222px;
+}
+/* .aboutus_sec::after {
+  content: "";
+  background-image: url(../../assests/Intersection-img.png);
+  background-size: 240px 222px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  right: 0;
+} */

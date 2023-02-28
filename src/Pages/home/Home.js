@@ -106,20 +106,6 @@ function Home() {
               </a>
               <FaAngleDoubleRight />
             </div>
-            <select class="selectpicker" data-live-search="true">
-              <option data-content="<span class='flag-icon flag-icon-us'></span> US">
-                US
-              </option>
-              <option data-content="<span class='flag-icon flag-icon-gb'></span> UK">
-                UK
-              </option>
-              <option data-content="<span class='flag-icon flag-icon-ca'></span> CD">
-                CN
-              </option>
-              <option data-content="<span class='flag-icon flag-icon-au'></span> AS">
-                As
-              </option>
-            </select>
           </div>
         </div>
         <div className="container pt-1 ">
